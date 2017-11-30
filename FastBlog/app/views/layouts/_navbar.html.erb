@@ -21,19 +21,16 @@
     <a class='navbar-brand' href='/'>
       Fast<span class='light'>blog</span>
     </a>
-<%-#    <button class="navbar-toogler hidden-sm-up pull-xs-right" type="button" data-toogle=" -%>
-<%-#    collapse" data-target="#exCollapsingNavbar"> -%>
-<%-#      &#9776; -%>
     </button>
-    <ul class="nav <%-# navbar-nav pull-sm-righ -%> hidden-xs-down">
+    <ul class="nav navbar-nav pull-sm-right hidden-xs-down">
       <li class="nav-item">
         <%= link_to 'Blog', root_path, class: "nav-link #{yield(:blog_active)}" %>
       </li>
       <li class="nav-item">
-        <%= link_to 'About', about_path, class: "nav-link #{yield(:blog_active)}" %>
+        <%= link_to 'About', about_path, class: "nav-link #{yield(:about_active)}" %>
       </li>
       <li class="nav-item">
-        <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:blog_active)}" %>
+        <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
       </li>
     </ul>
   </div>
