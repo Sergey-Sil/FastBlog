@@ -1,5 +1,8 @@
 .posts.index {
   .card {
+    .card-block {
+      background-color: $light-gray;
+    }
     border: none;
     border-radius: 0;
     border-bottom: 1px solid #181818;
@@ -41,6 +44,30 @@
         font-size: 0.9rem;
       }
 
+    }
+  }
+}
+
+.posts.edit, .posts.new {
+  .card {
+    .card-title{
+      margin-bottom: 0;
+      font-size: 19px;
+    }
+    .list-group-item {
+      padding: 5px;
+      border-left: 0;
+      border-right: 0;
+      input[type='text'], textarea {
+        font-size: 16px;
+        background-color: $light-gray;
+      }
+      textarea {
+        height: 100px;
+      }
+      &:last-child {
+        background-color: $light-gray;
+      }
     }
   }
 }
