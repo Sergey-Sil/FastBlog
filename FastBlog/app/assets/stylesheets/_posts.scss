@@ -19,7 +19,6 @@
         margin-bottom: 0.5rem;
         a {
           color: black;
-          text-decoration: none;
         }
       }
       .published-date {
@@ -32,6 +31,7 @@
       .card-text {
         font-size: 0.9rem;
         color: black;
+        text-decoration: none;
       }
 
     }
@@ -58,6 +58,20 @@
       &:last-child {
         background-color: $light-gray;
       }
+    }
+  }
+}
+
+.posts.show {
+  .author-bio {
+    display: center;
+    text-align: center;
+    background-color: rgb(205, 205, 205);
+    padding: 15px 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img {
+      border-radius: 50%;
     }
   }
 }

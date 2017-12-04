@@ -1,4 +1,5 @@
 .navbar {
+  position: horizontal;
   border-radius: 0;
   margin-bottom: 20px;
   .navbar-brand {
@@ -26,6 +27,10 @@
 
 .navbar-light .navbar-nav .nav-link {
     padding-right: 10px;
+}
+
+.dropdown-item {
+  display: block;
 }
 
 .collapse-bg {
